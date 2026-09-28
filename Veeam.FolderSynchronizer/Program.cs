@@ -44,7 +44,7 @@ internal class Program
             return;
         }
 
-        //Choose one of file comparison approach, see Readme.md for test results info about both approaches
+        //Choose one of file comparison approach, see PerformanceAnalysis.md for test results info about both approaches
         const FileComparisonApproach comparisonStrategy = FileComparisonApproach.ByteByByte;
 
         var logger = new Logger([new ConsoleLogWriter(), new FileLogWriter(logFilePath)]);
